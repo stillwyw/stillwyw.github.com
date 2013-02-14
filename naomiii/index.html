@@ -1113,11 +1113,12 @@
 				     $("#template").find(".WB_text").html('Yeah ~! 宝宝情人节快了！！！！！抱抱，亲亲！宝宝最好啦！！！！宝宝！！！！！');
 				     var obj = $("#template").clone();
 				     obj.removeAttr("id").prependTo(".WB_feed").hide().slideDown(500);
-				     changeColors();
+				    setTimeout(function(){changeColors()},7000);
+				     
 				 }
                         //  ..  setTimeout()
 		   }, loopLen);
-		   loopLen = loopLen - 50;
+		   loopLen = loopLen - 80;
 		}
 		myLoop();
 
